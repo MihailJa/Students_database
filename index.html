@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Students</title>
+	<meta name="keywords" content="Students">
+    <meta name="description" content="Students">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' 
+	integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/style1.css"/>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' 
+integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
+<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
+integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' 
+integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
+
+	<script src="scripts/script1.js"></script>
+
+  </head>
+  <body>
+<body class="container-fluid">  
+<div class="row justify-content-center">
+<div  class="col-xs col-sm col-md-7 col-lg-5 forma">
+
+<h3>Students DataBase</h3>
+
+<form action="add.php"  method="post" class="form-horizontal" name="vorml" id="vorml">
+
+<div class="form-group">
+<label for="first_name" class="control-label col-xs-2 lab">*First name</label>
+ <div class="col-xs-3">  
+   <input class="form_element" type="text"  id="first_name" name="first_name"  required placeholder="John">
+ </div>
+</div>
+
+<div class="form-group">
+<label for="last_name" class="control-label col-xs-2 lab">*Last name</label>
+ <div class="col-xs-3">
+   <input class="form_element" type="text" id="last_name" name="last_name"  required placeholder="Aplesed">
+ </div>
+</div>
+
+<div class="form-group">
+<label for="id" class="control-label col-xs-2 lab">*Isikukood</label>
+ <div class="col-xs-3">
+   <input class="form_element" type="text" id="id" name="id"  required placeholder="12345678910">
+ </div>
+</div>
+
+<div class="form-group">
+<label for="age" class="control-label col-xs-2 lab">*Grade</label>
+<div class="col-xs-3">
+<input class="form_element grade" type="number" id="grade" name="grade" required min="1" max="4">
+</div>
+</div>
+
+<div class="form-group">
+<label for="em" class="control-label col-xs-2 lab">*E-mail</label>
+<div class="col-xs-3">
+<input class="form_element" type="email" id="email" name="email" required placeholder="email@ee.ee">
+</div>
+</div>
+
+<div class="form-group">
+<label for="message " class="control-label col-xs-2 lab">Message</label>
+<div class="col-xs-5">
+<textarea class="form-control input-sm" id="message" name="message" rows="2" ></textarea>
+</div>
+</div>
+
+<div class="form-group">
+<div class="col-xs-3">
+    <input type="submit" value="Add" id="submit" class="btn btn-primary" />
+    <input type="reset" value="Cancel" id="reset" class="btn btn-secondary" />
+	<a href="view.php">Display_students</a>
+	<a href="del.php">Delete_students</a>
+</div>
+</div>
+
+</form>
+</div>
+</div>
+  
+  </body>
+</html>
